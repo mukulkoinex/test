@@ -1,10 +1,11 @@
 # Test
 
+This is a sample elixir app that deomnstrates the basics of phoenix, genservers and ecto. The application basically creates an in-memory priority queue with a persistent postgres/timescale layer. It also exposes apis to push and pop values from the queue. Also in case of any application crashes, the events from timescale will be replayed to generate the queue to the latest state.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
