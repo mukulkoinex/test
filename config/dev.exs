@@ -66,6 +66,10 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
+config :swarm,
+  # distribution_strategy: Swarm.Distribution.StaticQuorumRing,
+  # static_quorum_size: 1,
+  node_whitelist: [~r/^test[\d]@.*$/]
 # Configure your database
 config :test, Test.Repo,
   username: "postgres",

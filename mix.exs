@@ -44,8 +44,10 @@ defmodule Test.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:priority_queue, "~> 1.0"},
-      {:timex, "~> 3.5"}
-      
+      {:timex, "~> 3.5"},
+      {:libcluster, "~> 3.0"},
+      {:swarm, "~> 3.0"}
+
 
     ]
   end
